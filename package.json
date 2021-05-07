@@ -1,0 +1,21 @@
+{
+  "name": "@devpatelwebdeveloper/realtor-site",
+  "private": true,
+  "devDependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^4.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/**"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run start",
+    "build": "lerna run build",
+    "dev": "lerna run dev",
+    "test": "lerna run test",
+    "new-version": "lerna version --conventional-commit --yes",
+    "diff": "lerna diff"
+  }
+}

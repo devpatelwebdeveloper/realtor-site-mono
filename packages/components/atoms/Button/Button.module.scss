@@ -1,0 +1,23 @@
+@import "../../styles/main.scss";
+
+.button__test {
+	min-width: 150px;
+	min-height: 40px;
+	background: $primary-color;
+	display: flex;
+	border: 1px solid $primary-color;
+	padding: $spacing-small;
+	text-align: center;
+	align-items: center;
+	color: $white;
+	justify-content: center;
+	font-size: $body;
+	font-weight: $fontweight-medium;
+	&:hover {
+		cursor: pointer;
+		background: $primary-hover;
+	}
+	@include respond(mobile) {
+		min-height: 20px;
+	}
+}
